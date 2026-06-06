@@ -145,9 +145,7 @@
 </head>
 <body>
   <nav class="nav" id="site-nav">
-    <div class="nav-brand" onclick="navTo('dashboard')">
-      <div class="nav-mark">C</div>
-      <div class="nav-name">cya<span>meta</span></div>
+    <div>
     </div>
     <div>
       <button class="btn btn-danger-ghost" id="btn-logout" style="display:none" onclick="doLogout()">Logout</button>
@@ -157,12 +155,9 @@
   <div class="page" id="page-login">
     <div class="login-wrap">
       <div class="login-card">
-        <div class="login-icon">C</div>
-        <div class="login-title">Dashboard Access</div>
-        <div class="login-sub">Enter the password to manage payment forms</div>
         <input class="login-input" type="password" id="login-pw" placeholder="••••••••" onkeydown="if(event.key==='Enter')doLogin()">
-        <div class="login-err" id="login-err">Incorrect password. Try again.</div>
-        <button class="login-btn" id="login-btn" onclick="doLogin()">Unlock Dashboard</button>
+        <div class="login-err" id="login-err">Incorrect.</div>
+        <button class="login-btn" id="login-btn" onclick="doLogin()">Proceed</button>
       </div>
     </div>
   </div>
