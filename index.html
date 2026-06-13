@@ -679,6 +679,7 @@
       const button = document.getElementById('pay-submit-btn');
       button.disabled = true;
       await apiSubmit(currentFormId, name, email, phone);
+      await storeSession(phone, email);
       button.disabled = false;
 
       document.getElementById('p-init').textContent = name[0].toUpperCase();
